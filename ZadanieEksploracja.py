@@ -14,10 +14,12 @@ data_file = f"{path}/mxmh_survey_results.csv"
 # Wczytanie danych do DataFrame Pandas
 data = pd.read_csv(data_file)
 
+# Ustawienie szerokości wyświetlania Pandas
+pd.set_option('display.max_columns', None)
+
 # Usunięcie kolumn Timestamp, Primary streaming service i Permissions, jeśli istnieją
 data = data.drop(columns=['Timestamp', 'Primary streaming service', 'Permissions'], errors='ignore')
 
-# Czyszczenie danych
 # Usunięcie duplikatów
 data = data.drop_duplicates()
 
@@ -25,8 +27,20 @@ data = data.drop_duplicates()
 missing_rows_count = data.isnull().any(axis=1).sum()
 print(f"Liczba wierszy z brakującymi danymi przed uzupełnieniem: {missing_rows_count}")
 
-# Identyfikacja i zastępowanie wartości odstających medianą dla kolumn numerycznych
+# Identyfikacja kolumn numerycznych i tekstowych
 numeric_columns = data.select_dtypes(include=['float64', 'int64']).columns
+text_columns = data.select_dtypes(include=['object']).columns
+
+# Uzupełnianie brakujących wartości
+# Liczbowe kolumny: uzupełnianie medianą
+for col in numeric_columns:
+    data[col] = data[col].fillna(data[col].median())
+
+# Tekstowe kolumny: uzupełnianie wartością najczęściej występującą (mode)
+for col in text_columns:
+    data[col] = data[col].fillna(data[col].mode()[0])
+
+# Identyfikacja i zastępowanie wartości odstających medianą dla kolumn numerycznych
 for col in numeric_columns:
     Q1 = data[col].quantile(0.25)
     Q3 = data[col].quantile(0.75)
@@ -37,18 +51,36 @@ for col in numeric_columns:
     median_value = data[col].median()
     data[col] = np.where((data[col] < lower_bound) | (data[col] > upper_bound), median_value, data[col])
 
-# Uzupełnianie brakujących wartości
-# Liczbowe kolumny: uzupełnianie medianą
-for col in numeric_columns:
-    data[col] = data[col].fillna(data[col].median())
-
-# Tekstowe kolumny: uzupełnianie wartością najczęściej występującą (mode)
-text_columns = data.select_dtypes(include=['object']).columns
-for col in text_columns:
-    data[col] = data[col].fillna(data[col].mode()[0])
-
 # Usunięcie kolumn zawierających wyłącznie brakujące wartości
 data = data.dropna(axis=1, how='all')
+
+# Obliczanie podstawowych statystyk opisowych przed konwersją danych
+print("\nPodstawowe statystyki opisowe przed konwersją danych:")
+descriptive_stats = data.describe(include='all')
+print(descriptive_stats)
+
+#Wykonanie wizuzalizacji przed normalizacją danych
+
+#Wykonywanie wizualizacji przed normalizacją danyc
+print("\nWykonywanie wizualizacji po normalizacji...")
+for col in numeric_columns:
+    plt.figure(figsize=(10, 6))
+    plt.subplot(1, 2, 1)
+    plt.hist(data[col], bins=20, edgecolor='k')
+    plt.title(f"Histogram: {col}")
+    plt.xlabel(col)
+    plt.ylabel("Liczność")
+
+    plt.subplot(1, 2, 2)
+    plt.boxplot(data[col], vert=False)
+    plt.title(f"Boxplot: {col}")
+    plt.xlabel(col)
+
+    plt.tight_layout()
+    plt.show()
+
+# Zapis statystyk do pliku CSV
+descriptive_stats.to_csv("descriptive_stats.csv", index=True)
 
 # Konwersja danych tekstowych na numeryczne
 # Label Encoding dla prostych kolumn z niewielką liczbą unikalnych wartości
@@ -78,6 +110,7 @@ if 'Fav genre' in data.columns:
 numeric_columns = data.select_dtypes(include=['float64', 'int64', 'uint8']).columns
 
 # Normalizacja wszystkich kolumn numerycznych do zakresu [0, 1]
+# Komentarz: Decyzja o normalizacji całego zestawu numerycznego w zakresie [0, 1] wynika z potrzeby jednolitego zakresu dla modeli ML
 min_max_scaler = MinMaxScaler()
 data[numeric_columns] = min_max_scaler.fit_transform(data[numeric_columns])
 print("\nDane po normalizacji (zakres [0, 1]) dla wszystkich kolumn numerycznych:")
@@ -104,7 +137,7 @@ for col in numeric_columns:
 # Korelacje między zmiennymi
 print("\nKorelacje między zmiennymi:")
 correlation_matrix = data.corr()
-filtered_corr = correlation_matrix[(correlation_matrix > 0.3) | (correlation_matrix < -0.3)]
+filtered_corr = correlation_matrix[(correlation_matrix > 0.10) | (correlation_matrix < -0.10)]
 plt.figure(figsize=(15, 12))  # Zwiększenie rozmiaru wykresu
 sns.heatmap(filtered_corr, annot=True, fmt=".1f", cmap="coolwarm", cbar=True, annot_kws={"size": 8}, mask=filtered_corr.isnull())
 plt.xticks(rotation=45, ha="right", fontsize=8)  # Rotacja i zmniejszenie czcionki osi x
