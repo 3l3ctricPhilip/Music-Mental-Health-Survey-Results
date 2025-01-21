@@ -100,14 +100,14 @@ Choroby, dolegliwości:
 ![image](https://github.com/user-attachments/assets/42be7b60-233e-4569-9296-4acd0bc0a1e1)
 
 Słownik:
-Anxiety - Niepokój/Lęk
-Depression - Depresja
-Insomnia - Bezsenność
+Anxiety - Niepokój/Lęk,
+Depression - Depresja,
+Insomnia - Bezsenność,
 OCD - Zaburzenia obsesyjno-kompulsyjne (dawniej nerwica natręctw)
 
 # Moje obserwacje:
 
-## Osoby słuchające Rocka i Metalu są w większym stopniu narażone na depresję. Ponadto osoby słuchające metalu mogą cierpieć na bezsenność częściej, niż słuchacze innych gatunków muzycznych.
+## Osoby słuchające Rocka i Metalu są w większym stopniu narażone na depresję. Ponadto osoby słuchające Metalu mogą cierpieć na bezsenność częściej, niż słuchacze innych gatunków muzycznych.
 
 ### W mniejszym stopniu, ale jednak muzyka Pop oraz Video Game Music (Ścieżki dźwiękowe z gier) mogą wpływać na niepokój i stany lękowe. Na depresję może mieć wpływ Rap (pewnie chodzi o polskie produkcje), oraz Folk (w sumie się nie dziwię, artyści pokroju Elliotta Smitha mogą dobić leżącego).
 
