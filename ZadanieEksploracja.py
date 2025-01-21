@@ -54,15 +54,43 @@ for col in numeric_columns:
 # Usunięcie kolumn zawierających wyłącznie brakujące wartości
 data = data.dropna(axis=1, how='all')
 
+#Zapisanie wyczyszczonych i przekształconych danych do pliku CSV
+data.to_csv("processed_data_before_normalization.csv", index=False)
+print("Wyczyszczone i przekształcone dane zapisano do pliku 'processed_data_before_normalization.csv'.")
+
 # Obliczanie podstawowych statystyk opisowych przed konwersją danych
 print("\nPodstawowe statystyki opisowe przed konwersją danych:")
 descriptive_stats = data.describe(include='all')
 print(descriptive_stats)
 
-#Wykonanie wizuzalizacji przed normalizacją danych
+def visualize_detailed_stats(df):
+    print("Wizualizacja szczegółowych statystyk opisowych:")
+    numeric_columns = df.select_dtypes(include=['float64', 'int64']).columns
 
-#Wykonywanie wizualizacji przed normalizacją danyc
-print("\nWykonywanie wizualizacji po normalizacji...")
+    stats_data = {
+        'Średnia': df[numeric_columns].mean(),
+        'Mediana': df[numeric_columns].median(),
+        'Odchylenie standardowe': df[numeric_columns].std(),
+        'Zakres': df[numeric_columns].max() - df[numeric_columns].min()
+    }
+
+    stats_df = pd.DataFrame(stats_data)
+
+    for stat in stats_df.columns:
+        plt.figure(figsize=(12, 6))
+        sns.barplot(x=stats_df.index, y=stats_df[stat], palette="coolwarm")
+        plt.xticks(rotation=45, ha="right")
+        plt.title(f"{stat} dla kolumn numerycznych")
+        plt.ylabel(stat)
+        plt.xlabel("Kolumny")
+        plt.tight_layout()
+        plt.show()
+
+# Wywołanie wizualizacji szczegółowych statystyk
+visualize_detailed_stats(data)
+
+#Wykonywanie wizualizacji przed normalizacją danych
+print("\nWykonywanie wizualizacji przed normalizacją...")
 for col in numeric_columns:
     plt.figure(figsize=(10, 6))
     plt.subplot(1, 2, 1)
@@ -153,3 +181,7 @@ print(data.info())
 # Wyświetlenie kilku pierwszych wierszy danych
 print("\nPrzykładowe wiersze danych ze wszystkimi kolumnami:")
 print(data.head().to_string())
+
+#Zapisanie wyczyszczonych i przekształconych danych do pliku CSV
+data.to_csv("processed_data_after_normalization.csv", index=False)
+print("Wyczyszczone i przekształcone dane zapisano do pliku 'processed_data_after_normalization.csv'.")
