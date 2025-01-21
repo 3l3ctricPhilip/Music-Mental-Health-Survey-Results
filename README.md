@@ -4,7 +4,6 @@
 
 ## Poniżej tłumaczenie krótkiej notatki ze strony kaggle.com odnośnie tego datasetu.
 
-Kontekst
 Muzykoterapia (MT) to wykorzystanie muzyki w celu poprawy stresu, nastroju i ogólnego stanu zdrowia psychicznego danej osoby. MT jest również uznawana za praktykę opartą na dowodach, wykorzystującą muzykę jako katalizator „szczęśliwych” hormonów, takich jak oksytocyna.
 
 MT wykorzystuje jednak szeroką gamę różnych gatunków muzycznych, różniących się w zależności od organizacji.
