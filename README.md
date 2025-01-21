@@ -94,7 +94,7 @@ Choroby, dolegliwości:
 
 ![image](https://github.com/user-attachments/assets/e14df009-f2e1-4ee4-8dcd-d7e7d4d3b126)
 
-##Na koniec najciekawsze. Macierz korelacji. Wybrałem te komórki, gdzie współczynnik jest większy, niż 0,1 i mniejszy, niż -0,1. Wartości spoza tego przedziału zostają pominięte. Filtracja eliminuje mało istotne korelacje (bliskie 0).
+## Na koniec najciekawsze. Macierz korelacji. Wybrałem te komórki, gdzie współczynnik jest większy, niż 0,1 i mniejszy, niż -0,1. Wartości spoza tego przedziału zostają pominięte. Filtracja eliminuje mało istotne korelacje (bliskie 0).
 
 ![image](https://github.com/user-attachments/assets/42be7b60-233e-4569-9296-4acd0bc0a1e1)
 
