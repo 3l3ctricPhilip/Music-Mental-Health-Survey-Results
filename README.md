@@ -75,16 +75,6 @@ Wybrałem najciekawsze z mojego punktu widzenia.
 
 ![image](https://github.com/user-attachments/assets/2ab544f1-47b9-412b-b803-fc95bdbd3cb3)
 
-![image](https://github.com/user-attachments/assets/bab518f0-175b-4690-9058-23133de3489c)
-
-![image](https://github.com/user-attachments/assets/3c868015-7304-44c3-9757-74b3cf8e5308)
-
-![image](https://github.com/user-attachments/assets/5dc8ce07-35bf-4de8-a145-18bd70b9094b)
-
-![image](https://github.com/user-attachments/assets/459ad4e7-2e0c-4bac-a14e-2c55514d426d)
-
-![image](https://github.com/user-attachments/assets/401de649-7287-4f35-a192-b9c6bf61016a)
-
 ![image](https://github.com/user-attachments/assets/0c2eb965-629f-4e46-8045-4111b09674d7)
 
 ![image](https://github.com/user-attachments/assets/b81efa6a-6f52-42f3-b264-35e278016bd9)
@@ -115,11 +105,11 @@ Depression - Depresja
 Insomnia - Bezsenność
 OCD - Zaburzenia obsesyjno-kompulsyjne (dawniej nerwica natręctw)
 
-## Moje obserwacje:
+# Moje obserwacje:
 
-# Osoby słuchające Rocka i Metalu są w większym stopniu narażone na depresję. Ponadto osoby słuchające metalu mogą cierpieć na bezsenność częściej, niż słuchacze innych gatunków muzycznych.
+## Osoby słuchające Rocka i Metalu są w większym stopniu narażone na depresję. Ponadto osoby słuchające metalu mogą cierpieć na bezsenność częściej, niż słuchacze innych gatunków muzycznych.
 
-W mniejszym stopniu, ale jednak muzyka Pop oraz Video Game Music (Ścieżki dźwiękowe z gier) mogą wpływać na niepokój i stany lękowe. Na depresję może mieć wpływ Rap, oraz muzyka folkowa (!?).
+### W mniejszym stopniu, ale jednak muzyka Pop oraz Video Game Music (Ścieżki dźwiękowe z gier) mogą wpływać na niepokój i stany lękowe. Na depresję może mieć wpływ Rap (pewnie chodzi o polskie produkcje), oraz Folk (w sumie się nie dziwię, artyści pokroju Elliotta Smitha mogą dobić leżącego).
 
 
 
