@@ -95,7 +95,7 @@ Choroby, dolegliwości:
 
 ![image](https://github.com/user-attachments/assets/e14df009-f2e1-4ee4-8dcd-d7e7d4d3b126)
 
-## NWedług mnie najciekawszym aspektem jest macierz korelacji. Wybrałem te komórki, gdzie współczynnik jest większy, niż 0,1 i mniejszy, niż -0,1. Wartości spoza tego przedziału zostały pominięte. Filtracja eliminuje mało istotne korelacje (bliskie 0).
+## Według mnie najciekawszym aspektem jest macierz korelacji. Wybrałem te komórki, gdzie współczynnik jest większy, niż 0,1 i mniejszy, niż -0,1. Wartości spoza tego przedziału zostały pominięte. Filtracja eliminuje mało istotne korelacje (bliskie 0).
 
 ![image](https://github.com/user-attachments/assets/42be7b60-233e-4569-9296-4acd0bc0a1e1)
 
@@ -109,9 +109,7 @@ OCD - Zaburzenia obsesyjno-kompulsyjne (dawniej nerwica natręctw)
 
 ## Osoby słuchające Rocka i Metalu są w większym stopniu narażone na depresję. Ponadto osoby słuchające Metalu mogą cierpieć na bezsenność częściej, niż słuchacze innych gatunków muzycznych.
 
-### Osoby słuchające Rocka i Metalu są w większym stopniu narażone na depresję. Ponadto osoby słuchające Metalu mogą cierpieć na bezsenność częściej niż słuchacze innych gatunków muzycznych.
-
-W mniejszym stopniu muzyka Pop oraz Video Game Music (Ścieżki dźwiękowe z gier) mogą wpływać na poziom niepokoju i stany lękowe. Na depresję może mieć wpływ Rap (pewnie chodzi o polskie produkcje), oraz Folk (w sumie się nie dziwię, artyści pokroju Elliotta Smitha mogą dobić leżącego).
+### W mniejszym stopniu muzyka Pop oraz Video Game Music (Ścieżki dźwiękowe z gier) mogą wpływać na poziom niepokoju i stany lękowe. Na depresję może mieć wpływ Rap (pewnie chodzi o polskie produkcje), oraz Folk (w sumie się nie dziwię, artyści pokroju Elliotta Smitha mogą dobić leżącego).
 
 PS Zastanawiam się, kto tworzył ankietę i wyodrębnił dwa gatunki jak Rap i Hip hop.
 
