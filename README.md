@@ -2,7 +2,6 @@
 
 ## Moim obiektem badawczym jest dataset "Music & Mental Health" ze strony kaggle.com. Badanie było przeprowadzone na grupie badawczej liczącej 336 osób. Głownym obiektem zainteresowania jest wpływ muzyki, a dokładniej jej poszczególnych gatunków na zdrowie psychiczne odbiorców.
 
-Poniżej tłumaczenie krótkiej notatki ze strony kaggle.com odnośnie tego datasetu.
 ## Poniżej tłumaczenie krótkiej notatki ze strony kaggle.com odnośnie tego datasetu.
 
 Muzykoterapia (MT) to wykorzystanie muzyki w celu poprawy stresu, nastroju i ogólnego stanu zdrowia psychicznego danej osoby. MT jest również uznawana za praktykę opartą na dowodach, wykorzystującą muzykę jako katalizator „szczęśliwych” hormonów, takich jak oksytocyna.
