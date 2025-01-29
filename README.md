@@ -1,8 +1,8 @@
 # Music & Mental Health (MxMH) Survey Results 
 
-## Moim obiektem badawczym jest dataset "Music & Mental Health" ze strony kaggle.com. Badanie było przeprowadzone na grupie badawczej liczącej 336 osób. Głownym obiektem zainteresowania jest wpływ muzyki, a dokładniej jej poszczególnych gatunków na zdrowie psychiczne odbiorców.
+## Na tapet wziąłem dataset "Music & Mental Health" ze strony kaggle.com. Badanie było przeprowadzone na grupie badawczej liczącej 336 osób. Moim głównym obiektem zainteresowania jest wpływ muzyki, a dokładniej jej poszczególnych gatunków na zdrowie psychiczne odbiorców.
 
-## Poniżej tłumaczenie krótkiej notatki ze strony kaggle.com odnośnie tego datasetu.
+## Poniżej tłumaczenie krótkiej notatki ze strony kaggle.com
 
 Muzykoterapia (MT) to wykorzystanie muzyki w celu poprawy stresu, nastroju i ogólnego stanu zdrowia psychicznego danej osoby. MT jest również uznawana za praktykę opartą na dowodach, wykorzystującą muzykę jako katalizator „szczęśliwych” hormonów, takich jak oksytocyna.
 
@@ -34,8 +34,8 @@ Respondenci oceniają lęk, depresję, bezsenność i OCD w skali od 0 do 10, gd
 ## Podstawowe statystyki opisowe
 
 Liczba wierszy z brakującymi danymi przed uzupełnieniem: 119.
-Wiersze uzupełniłem medianą w przypadku kolumn liczbowych, tekstowe kolumny zaś uzupłeniłem wartością najczęściej występującą (moda). 
-Ponadto w przypadku kolumn numerycznych zidentyfikowałem wartości odstające i zastąpiłem medianą.
+Wiersze uzupełniłem medianą w przypadku kolumn liczbowych, tekstowe kolumny zaś wartością najczęściej występującą (moda). 
+Ponadto odnośnie kolumn numerycznych zidentyfikowałem wartości odstające i zastąpiłem medianą.
 
 ### Wizualizacje dla podstawowych statystyk opisowych:
 
@@ -64,7 +64,7 @@ Ponadto w przypadku kolumn numerycznych zidentyfikowałem wartości odstające i
 
 ![image](https://github.com/user-attachments/assets/7495fadf-835e-41dd-8a0f-3776e1f975aa)
 
-Następnie dokonałem konwersji danych tekstowych na numeryczne. Wykorzystałem Label Encoder dla prostych kolumn z niewielką liczbą unikalnych wartości, Fav genre (ulubiony gatunek), oraz dla kolumn z kategoriami częstotliwości (Never: 0 , Rarelty: 1, Sometimes: 2, Very frequently: 3).
+Następnie dokonałem konwersji danych tekstowych na numeryczne. Wykorzystałem Label Encoder dla prostych kolumn z niewielką liczbą unikalnych wartości: Fav genre (ulubiony gatunek), częstotliwość słuchania danego gatunku wg respondentów - Never: 0 , Rarelty: 1, Sometimes: 2, Very frequently: 3.
 
 Kolejnym krokiem była normalizacja wszystkich kolumn numerycznych do zakresu [0, 1]
 
@@ -106,11 +106,11 @@ OCD - Zaburzenia obsesyjno-kompulsyjne (dawniej nerwica natręctw)
 
 # Moje obserwacje:
 
-## Osoby słuchające Rocka i Metalu są w większym stopniu narażone na depresję. Ponadto osoby słuchające Metalu mogą cierpieć na bezsenność częściej, niż słuchacze innych gatunków muzycznych.
+## Osoby słuchające Rocka i Metalu są w większym stopniu narażone na depresję (współczynnik korelacji: 0,2). Ponadto osoby słuchające Metalu mogą cierpieć na bezsenność częściej, niż słuchacze innych gatunków muzycznych (współczynnik korelacji: 0,2).
 
-### W mniejszym stopniu muzyka Pop oraz Video Game Music (Ścieżki dźwiękowe z gier) mogą wpływać na poziom niepokoju i stany lękowe. Na depresję może mieć wpływ Rap (pewnie chodzi o polskie produkcje), oraz Folk (w sumie się nie dziwię, artyści pokroju Elliotta Smitha mogą dobić leżącego).
+### W mniejszym stopniu muzyka Pop oraz Video Game Music (Ścieżki dźwiękowe z gier) mogą wpływać na poziom niepokoju i stany lękowe (współczynnik korelacji: 0,1). Na depresję może mieć wpływ również Rap (pewnie chodzi o polskie produkcje), oraz Folk (w sumie się nie dziwię, artyści pokroju Elliotta Smitha potrafią dobić leżącego). Tutaj współczynnik korelacji również wyniósł 0,1. 
 
-PS Zastanawiam się, kto tworzył ankietę i wyodrębnił dwa gatunki jak Rap i Hip hop.
+PS Zastanawiam się, kto tworząc ankietę i wyodrębnił dwa gatunki jak Rap i Hip hop.
 
 
 
