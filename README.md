@@ -110,7 +110,7 @@ OCD - Zaburzenia obsesyjno-kompulsyjne (dawniej nerwica natręctw)
 
 ### W mniejszym stopniu muzyka Pop oraz Video Game Music (Ścieżki dźwiękowe z gier) mogą wpływać na poziom niepokoju i stany lękowe (współczynnik korelacji: 0,1). Na depresję może mieć wpływ również Rap (pewnie chodzi o polskie produkcje), oraz Folk (w sumie się nie dziwię, artyści pokroju Elliotta Smitha potrafią dobić leżącego). Tutaj współczynnik korelacji również wyniósł 0,1. 
 
-PS Zastanawiam się, kto tworząc ankietę i wyodrębnił dwa gatunki jak Rap i Hip hop.
+PS Zastanawiam się, kto tworząc ankietę wyodrębnił dwa gatunki jak Rap i Hip hop.
 
 
 
