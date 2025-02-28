@@ -64,7 +64,7 @@ Ponadto odnośnie kolumn numerycznych zidentyfikowałem wartości odstające i z
 
 ![image](https://github.com/user-attachments/assets/7495fadf-835e-41dd-8a0f-3776e1f975aa)
 
-Następnie dokonałem konwersji danych tekstowych na numeryczne. Wykorzystałem Label Encoder dla prostych kolumn z niewielką liczbą unikalnych wartości: Fav genre (ulubiony gatunek), częstotliwość słuchania danego gatunku wg respondentów - Never: 0 , Rarelty: 1, Sometimes: 2, Very frequently: 3.
+Następnie dokonałem konwersji danych tekstowych na numeryczne. Wykorzystałem Label Encoder dla prostych kolumn z niewielką liczbą unikalnych wartości.
 
 Kolejnym krokiem była normalizacja wszystkich kolumn numerycznych do zakresu [0, 1]
 
@@ -106,11 +106,11 @@ OCD - Zaburzenia obsesyjno-kompulsyjne (dawniej nerwica natręctw)
 
 # Moje obserwacje:
 
-## Osoby słuchające Rocka i Metalu są w większym stopniu narażone na depresję (współczynnik korelacji: 0,2). Ponadto osoby słuchające Metalu mogą cierpieć na bezsenność częściej, niż słuchacze innych gatunków muzycznych (współczynnik korelacji: 0,2).
+## Osoby słuchające rocka i metalu są w większym stopniu narażone na depresję (współczynnik korelacji: 0,2). Ponadto osoby słuchające metalu mogą cierpieć na bezsenność częściej, niż słuchacze innych gatunków muzycznych (współczynnik korelacji: 0,2).
 
-### W mniejszym stopniu muzyka Pop oraz Video Game Music (Ścieżki dźwiękowe z gier) mogą wpływać na poziom niepokoju i stany lękowe (współczynnik korelacji: 0,1). Na depresję może mieć wpływ również Rap (pewnie chodzi o polskie produkcje), oraz Folk (w sumie się nie dziwię, artyści pokroju Elliotta Smitha potrafią dobić leżącego). Tutaj współczynnik korelacji również wyniósł 0,1. 
+### W mniejszym stopniu muzyka pop oraz ścieżki dźwiękowe z gier (video game music) mogą wpływać na poziom niepokoju i stany lękowe (współczynnik korelacji: 0,1). Na depresję może mieć wpływ również rap (pewnie chodzi o polskie produkcje), oraz folk (w sumie się nie dziwię, artyści pokroju Elliotta Smitha potrafią dobić leżącego). Tutaj współczynnik korelacji również wyniósł 0,1. 
 
-PS Zastanawiam się, kto tworząc ankietę wyodrębnił dwa gatunki jak Rap i Hip hop.
+PS Zastanawiam się, kto tworząc ankietę wyodrębnił dwa gatunki jak rap i hip hop.
 
 
 
